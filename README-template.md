@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](3-column preview card component.png)
+![Screenshot](https://github.com/roobeen-b/3-column-preview-card/blob/main/3-column-preview-card-component.png?raw=true)
 
 ### Links
 
