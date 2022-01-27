@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&family=Lexend+Deca&family=Luxurious+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@100;200&family=Lexend+Deca&family=Luxurious+Roman&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --font-1: "Lexend Deca", sans-serif;
+  --font-2: "Big Shoulders Display", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+.container {
+  margin: 8% 23%;
+  /* box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.68); */
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  color: white;
+  background-color: var(--very-light-gray);
+  padding: 5%;
+  font-family: var(--font-1);
+}
+
+.first {
+  background-color: var(--bright-orange);
+}
+
+.second {
+  background-color: var(--dark-cyan);
+}
+
+.third {
+  background-color: var(--very-dark-cyan);
+}
+
+h1 {
+  font-family: var(--font-2);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 5vh 0;
+  color: var(--very-light-gray);
+}
+
+p {
+  margin: 5vh 0 8vh 0;
+  font-size: 0.8rem;
+  color: var(--transparent-white);
+}
+
+button {
+  background-color: var(--very-light-gray);
+  padding: 6% 16%;
+  border-radius: 25px;
+  border: 0;
+  font-family: var(--font-2);
+  font-size: 1rem;
+  color: var(--very-light-gray);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid var(--very-light-gray);
+}
+
+#first {
+  color: var(--bright-orange);
+}
+
+#first:focus {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
+#second {
+  color: var(--dark-cyan);
+}
+
+#second:focus {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+#third {
+  color: var(--very-dark-cyan);
+}
+#third:focus {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 10% 5%;
+    padding: 0;
+    display: block;
+  }
+
+  button {
+    padding: 4% 12%;
+  }
+
+  section {
+    padding: 10%;
+  }
+}
